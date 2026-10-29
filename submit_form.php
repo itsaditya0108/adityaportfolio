@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Here we can perform further processing, such as sending an email
     // For example:
-    $to = "adityaverma9005@gmail.com";
+    $to = "adityaverma0244@gmail.com";
     $subject = "New message from website contact form";
     $email_body = "Name: $name\nEmail: $email\nMessage:\n$message";
     

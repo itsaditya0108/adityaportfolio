@@ -1,270 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <!-- --------- UNICONS ---------- -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="styles.css">
+  <!-- --------- CSS ---------- -->
+  <link rel="stylesheet" href="styles.css">
 
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- --------- FAVICON ---------- -->
+  <link rel="shortcut icon" href="aditya.png" type="image/png">
 
-    <title>Portfolio | Ludiflex</title>
+  <title>Aditya Verma | Software Developer Portfolio</title>
 </head>
-<body>
-   <div class="container">
-    <!-- --------------- HEADER --------------- -->
-      <nav id="header">
-        <div class="nav-logo">
-            <p class="nav-name">Aadi</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn download-cv">Download CV <i class="uil uil-file-alt"></i></button>
-        </div>        
-        
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-      </nav>
 
+<body>
+  <div class="container">
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+      <div class="nav-logo">
+        <a href="#home" style="text-decoration: none;">
+          <p class="nav-name">Aadi</p>
+          <span>.</span>
+        </a>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link" onclick="closeMenu()">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link" onclick="closeMenu()">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#experience" class="nav-link" onclick="closeMenu()">Experience</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link" onclick="closeMenu()">Projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn download-cv">Download CV <i class="uil uil-file-alt"></i></button>
+      </div>
+
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
 
     <!-- -------------- MAIN ---------------- -->
     <main class="wrapper">
-       <!-- -------------- FEATURED BOX ---------------- -->
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-    <span>Aditya Verma</span>
-</div>
+      <!-- -------------- FEATURED BOX ---------------- -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
 
-<div class="featured-name">
-    <p>I'm <span class="typedText"></span></p>
-</div>
 
-<div class="featured-text-info">
-    <p>Passionate software developer with a focus on building responsive web applications using Java and the MERN stack. Always eager to learn and grow in the world of tech.</p>
-</div>
-
-            <div class="featured-text-btn">
-                <button class="btn blue-btn" onclick="redirectToEmail()">Hire Me</button>
-                <button class="btn download-cv">Download CV <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="social_icons">
-                <div class="icon"><a href="https://www.instagram.com/aditya.verma.0fficial"><i class="uil uil-instagram"></i></a></div>
-                <div class="icon"><a href="https://www.linkedin.com/in/aditya-verma-86b726304"><i class="uil uil-linkedin-alt"></i></a></div>
-                <div class="icon"><a href="https://dribbble.com/itsaditya0108"><i class="uil uil-dribbble"></i></a></div>
-                <div class="icon"><a href="https://www.github.com/itsaditya0108"><i class="uil uil-github-alt"></i></a></div>
-            </div>
+          <div class="featured-text-card">
+            <span>Aditya Verma</span>
           </div>
-          <div class="featured-image">
+
+          <div class="featured-name">
+            <p>I'm a <span class="typedText"></span></p>
+          </div>
+
+          <div class="featured-text-info">
+            <p>Software Developer specializing in building scalable backend and full-stack applications using Java,
+              Spring Boot, MySQL, REST APIs, AWS, and React.js. Currently engineering backend systems for production
+              mobile applications.</p>
+          </div>
+
+          <div class="featured-location">
+            <p><i class="uil uil-map-marker"></i> Borivali West, Mumbai, Maharashtra</p>
+          </div>
+
+          <div class="featured-text-btn">
+            <button class="btn btn-primary" onclick="redirectToEmail()">Hire Me <i
+                class="uil uil-envelope-alt"></i></button>
+            <a href="#projects" class="btn btn-secondary">View Projects <i class="uil uil-arrow-down-right"></i></a>
+            <button class="btn btn-dark download-cv">Download CV <i class="uil uil-file-alt"></i></button>
+          </div>
+
+          <div class="social_icons">
+            <div class="icon" title="LinkedIn"><a href="https://www.linkedin.com/in/aditya-verma-86b726304"
+                target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></div>
+            <div class="icon" title="GitHub"><a href="https://www.github.com/itsaditya0108" target="_blank"
+                rel="noopener noreferrer"><i class="uil uil-github-alt"></i></a></div>
+            <div class="icon" title="Copy Email"
+              onclick="copyToClipboard('adityaverma0244@gmail.com', 'Email copied to clipboard!')"><i
+                class="uil uil-envelope"></i></div>
+            <div class="icon" title="Call"><a href="tel:+919372024440"><i class="uil uil-phone"></i></a></div>
+          </div>
+        </div>
+
+        <div class="featured-image">
+          <div class="image-wrapper">
             <div class="image">
-                <img src="adityav.png" alt="Image not found">
+              <img src="adityav.png" alt="Aditya Verma">
             </div>
           </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
+        </div>
 
-       </section>
-     <!-- -------------- ABOUT SECTION ---------------- -->
-<section class="section" id="about">
-  <div class="top-header">
-    <h1>About Me</h1>
-  </div>
-
-  <div class="row">
-    <!-- About Text -->
-    <div class="col">
-      <div class="about-info">
-        <h3>My Introduction</h3>
-        <p>
-          I'm a passionate software developer with a strong foundation in programming and web development. Currently focusing on Java and the MERN stack, I enjoy building full-stack web applications that solve real-world problems. I take a logical and creative approach to writing clean, efficient, and user-friendly code. I'm always eager to learn and grow with the latest technologies in the software industry.
-        </p>
-        <div class="about-btn">
-          <a href="Aditya_Verma_Resume_Updated.pdf" download>
-            <button class="btn download-cv">
-              Download CV <i class="uil uil-import"></i>
-            </button>
+        <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Scroll Down</p>
           </a>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Skills Section -->
-    <div class="col">
-      <div class="skills-box">
-        <div class="skills-header">
-          <h3>Frontend</h3>
+      <!-- -------------- ABOUT SECTION ---------------- -->
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>About Me</h1>
+          <span>My introduction, education & technical profile</span>
         </div>
-        <div class="skills-list">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Bootstrap</span>
-          <span>JavaScript</span>
-          <span>React</span>
-        </div>
-      </div>
 
-      <div class="skills-box">
-        <div class="skills-header">
-          <h3>Backend</h3>
-        </div>
-        <div class="skills-list">
-          <span>Java</span>
-          <span>Node.js</span>
-          <span>Express.js</span>
-          <span>Python</span>
-          <span>C++</span>
-        </div>
-      </div>
+        <div class="row">
+          <!-- About Text & Education -->
+          <div class="col">
+            <div class="about-info">
+              <h3>My Introduction</h3>
+              <p>
+                Software Developer with hands-on experience building backend and full-stack applications using Java,
+                Spring Boot, MySQL, REST APIs, AWS, and React.js. Currently developing backend systems for Chronogram
+                Live, a production mobile application, including authentication, media services, synchronization, and
+                real-time communication. Previously worked as a Full Stack Developer Intern at BackToCode, contributing
+                to the Bank E-Auction Platform using Java, Spring Boot, React.js, MySQL, and AWS.
+              </p>
 
-      <div class="skills-box">
-        <div class="skills-header">
-          <h3>Database</h3>
-        </div>
-        <div class="skills-list">
-          <span>MySQL</span>
-          <span>MongoDB</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-       <!-- -------------- PROJECT BOX ---------------- -->
-
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-briefcase-alt"></i>
-                <h3>Completed</h3>
-                <label>15+ Finished Projects</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-users-alt"></i>
-                <h3>Clients</h3>
-                <label>2+ Happy Clients</label>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>1+ Years in the field</label>
-            </div>
-          </div>
-       </section>
-
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: vermaditya9005@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Conatact No.: +91 9987740460</p>
+              <!-- Education Block -->
+              <div class="education-card">
+                <div class="education-header">
+                  <div class="edu-icon"><i class="uil uil-graduation-cap"></i></div>
+                  <div class="edu-info">
+                    <h4>University of Mumbai</h4>
+                    <p class="edu-degree">B.Sc. Information Technology</p>
+                  </div>
                 </div>
-             </div>
-             <div class="col">
-                <form class="form-control" id="contactForm" method="post" action="submit_form.php">
-                    <div class="form-inputs">
-                        <input type="text" id="nameInput" name="name" class="input-field" placeholder="Name" required>
-                        <input type="email" id="emailInput" name="email" class="input-field" placeholder="Email" required>
-                    </div>
-                    <div class="text-area">
-                        <textarea id="messageInput" name="message" placeholder="Message" required></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button type="submit" class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </form>
-                
-             </div>
+
+                <div class="about-btn">
+                  <a href="aditya_resume.pdf" download="Aditya_Verma_Resume.pdf">
+                    <button class="btn btn-primary download-cv">
+                      Download CV <i class="uil uil-import"></i>
+                    </button>
+                  </a>
+                </div>
+              </div>
+
+              <div class="about-btn">
+                <a href="aditya_resume.pdf" download="Aditya_Verma_Resume.pdf">
+                  <button class="btn download-cv">
+                    Download CV <i class="uil uil-import"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-       </section>
+
+          <!-- Skills Section -->
+          <div class="col">
+            <div class="skills-card">
+              <h3>Technical Skills</h3>
+
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h4><i class="uil uil-server-network"></i> Backend</h4>
+                </div>
+                <div class="skills-list">
+                  <span>Java</span>
+                  <span>Spring Boot</span>
+                  <span>Spring Security</span>
+                  <span>Spring Data JPA</span>
+                  <span>Hibernate</span>
+                  <span>REST APIs</span>
+                  <span>JWT</span>
+                  <span>WebSocket</span>
+                </div>
+              </div>
+
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h4><i class="uil uil-browser"></i> Frontend</h4>
+                </div>
+                <div class="skills-list">
+                  <span>React.js</span>
+                  <span>Next.js</span>
+                  <span>Tailwind CSS</span>
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h4><i class="uil uil-database"></i> Database & Mobile</h4>
+                </div>
+                <div class="skills-list">
+                  <span>MySQL</span>
+                  <span>SQL</span>
+                  <span>Flutter</span>
+                  <span>Dart</span>
+                </div>
+              </div>
+
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h4><i class="uil uil-cloud-computing"></i> Cloud & Tools</h4>
+                </div>
+                <div class="skills-list">
+                  <span>AWS EC2</span>
+                  <span>AWS S3</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>Postman</span>
+                  <span>VPS</span>
+                </div>
+              </div>
+
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h4><i class="uil uil-layer-group"></i> Core Concepts</h4>
+                </div>
+                <div class="skills-list">
+                  <span>Authentication</span>
+                  <span>Authorization</span>
+                  <span>RBAC</span>
+                  <span>API Design</span>
+                  <span>Real-Time Systems</span>
+                  <span>Microservices</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- EXPERIENCE SECTION ---------------- -->
+      <section class="section" id="experience">
+        <div class="top-header">
+          <h1>Work Experience</h1>
+          <span>My professional journey and industry experience</span>
+        </div>
+
+        <div class="experience-container">
+          <!-- CapriTech Global Services -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3>Software Developer</h3>
+                <h4 class="company-name"><i class="uil uil-building"></i> CapriTech Global Services</h4>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-badge date-badge"><span class="pulse-dot"></span> Jan 2026 – Present</span>
+                <span class="exp-badge loc-badge"><i class="uil uil-map-marker"></i> Mumbai, Maharashtra</span>
+              </div>
+            </div>
+
+            <div class="exp-project-highlight">
+              <p><strong>Primary Focus:</strong> Backend services for <strong>Chronogram Live</strong>, a production
+                mobile application published on Google Play Store.</p>
+              <a href="https://chronogram.live" target="_blank" rel="noopener noreferrer" class="live-link-pill">
+                <i class="uil uil-external-link-alt"></i> chronogram.live
+              </a>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Developing backend services for Chronogram Live, a production mobile application published on the
+                Google Play Store.</li>
+              <li>Designing and implementing REST APIs and backend services using Java, Spring Boot, Spring Security,
+                JWT, and MySQL.</li>
+              <li>Implemented secure authentication and authorization workflows using JWT and Spring Security.</li>
+              <li>Developed backend modules for user management, media handling, synchronization, trips, notifications,
+                and other core application features.</li>
+              <li>Implemented real-time chat functionality with conversations, messaging, user blocking, and message
+                read-status handling using WebSocket.</li>
+              <li>Worked with AWS infrastructure, including EC2 deployment and S3-based media storage, along with
+                production configuration and troubleshooting.</li>
+              <li>Collaborated with Flutter developers to integrate mobile clients with backend APIs and resolve
+                application integration issues.</li>
+              <li>Researching and developing offline AI-based image editing and enhancement capabilities for the mobile
+                application.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Spring Security</span>
+              <span>JWT</span>
+              <span>MySQL</span>
+              <span>WebSocket</span>
+              <span>AWS EC2</span>
+              <span>AWS S3</span>
+              <span>Flutter</span>
+              <span>AI Enhancement</span>
+            </div>
+          </div>
+
+          <!-- BackToCode Software Company -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div class="exp-title-group">
+                <h3>Full Stack Developer Intern</h3>
+                <h4 class="company-name"><i class="uil uil-building"></i> BackToCode Software Company</h4>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-badge date-badge"><i class="uil uil-calendar-alt"></i> Jan 2025 – Dec 2025</span>
+                <span class="exp-badge loc-badge"><i class="uil uil-map-marker"></i> Mumbai, Maharashtra</span>
+              </div>
+            </div>
+
+            <div class="exp-project-highlight">
+              <p><strong>Primary Focus:</strong> Bank E-Auction Platform, a full-stack web application for property
+                listing, bidding, and auction management.</p>
+              <a href="https://banke-auction.com" target="_blank" rel="noopener noreferrer" class="live-link-pill">
+                <i class="uil uil-external-link-alt"></i> banke-auction.com
+              </a>
+            </div>
+
+            <ul class="exp-bullets">
+              <li>Contributed to the development of the Bank E-Auction Platform, a full-stack web application for
+                property listing, bidding, and auction management.</li>
+              <li>Developed backend services and REST APIs using Java and Spring Boot, with MySQL for database design
+                and management.</li>
+              <li>Implemented role-based access control (RBAC) supporting multiple user roles, dashboards, and
+                permissions.</li>
+              <li>Developed registration, approval, authentication, and verification workflows for platform users.</li>
+              <li>Implemented auction lifecycle management and bidding functionality for property auctions.</li>
+              <li>Developed React.js frontend functionality and integrated frontend components with backend REST APIs.
+              </li>
+              <li>Worked on OTP authentication, WhatsApp notification integration, and deployment-related activities.
+              </li>
+              <li>Contributed to AWS-based application deployment and infrastructure configuration.</li>
+            </ul>
+
+            <div class="exp-tags">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>React.js</span>
+              <span>MySQL</span>
+              <span>AWS</span>
+              <span>RBAC</span>
+              <span>REST APIs</span>
+              <span>OTP Auth</span>
+              <span>WhatsApp API</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- PROJECT BOX ---------------- -->
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Featured Projects</h1>
+          <span>Production backend systems, full-stack platforms, and client solutions</span>
+        </div>
+
+        <div class="project-container">
+          <!-- Project 1: Chronogram Live (TOP / FEATURED) -->
+          <div class="project-card featured-project">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="uil uil-mobile-android-alt"></i>
+              </div>
+              <div class="project-badges">
+                <span class="badge featured-badge"><i class="uil uil-star"></i> Flagship</span>
+                <span class="badge live-badge"><i class="uil uil-google-play"></i> Play Store</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title-row">
+                <h3>Chronogram Live</h3>
+                <span class="project-category">Production Mobile Backend</span>
+              </div>
+              <p class="project-desc">
+                Production backend architecture for a Google Play Store mobile application. Implemented secure JWT
+                authentication, AWS S3 media pipeline, real-time WebSocket chat with read receipts & user blocking, trip
+                synchronization, and offline AI-driven image editing capabilities.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="uil uil-check-circle"></i> Real-time WebSocket chat & messaging pipeline</li>
+                <li><i class="uil uil-check-circle"></i> AWS EC2 deployment & S3 media storage</li>
+                <li><i class="uil uil-check-circle"></i> Offline AI-based image enhancement research</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>MySQL</span>
+                <span>WebSocket</span>
+                <span>AWS EC2 & S3</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://chronogram.live" target="_blank" rel="noopener noreferrer"
+                class="btn project-btn primary-project-btn">
+                Explore Platform <i class="uil uil-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Bank E-Auction Platform -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="uil uil-university"></i>
+              </div>
+              <div class="project-badges">
+                <span class="badge live-badge"><i class="uil uil-globe"></i> Enterprise Platform</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title-row">
+                <h3>Bank E-Auction Platform</h3>
+                <span class="project-category">Full-Stack Auction Portal</span>
+              </div>
+              <p class="project-desc">
+                Full-stack property listing, bidding, and auction lifecycle management platform. Implemented role-based
+                access control (RBAC) across multi-tier dashboards, automated OTP authentication, and integrated
+                automated WhatsApp notification pipelines on AWS.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="uil uil-check-circle"></i> Auction lifecycle & bidding management system</li>
+                <li><i class="uil uil-check-circle"></i> Multi-tier RBAC for admins, banks & bidders</li>
+                <li><i class="uil uil-check-circle"></i> Automated OTP verification & WhatsApp alerts</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>React.js</span>
+                <span>MySQL</span>
+                <span>AWS</span>
+                <span>RBAC</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://banke-auction.com" target="_blank" rel="noopener noreferrer" class="btn project-btn">
+                Visit Live Platform <i class="uil uil-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: SureMSG (LAST) -->
+          <div class="project-card">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <i class="uil uil-comment-message"></i>
+              </div>
+              <div class="project-badges">
+                <span class="badge live-badge"><i class="uil uil-browser"></i> Client Business</span>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <div class="project-title-row">
+                <h3>SureMSG</h3>
+                <span class="project-category">Messaging & Lead Platform</span>
+              </div>
+              <p class="project-desc">
+                Responsive business website for a WhatsApp and RCS messaging service platform. Built modern user
+                interfaces focused on customer engagement, lead generation, and responsive design with API-based
+                workflows for inquiry handling and UX optimization.
+              </p>
+              <ul class="project-highlights">
+                <li><i class="uil uil-check-circle"></i> WhatsApp & RCS business marketing showcase</li>
+                <li><i class="uil uil-check-circle"></i> High-conversion customer inquiry workflows</li>
+                <li><i class="uil uil-check-circle"></i> Performance optimized with React.js & Tailwind</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>React.js</span>
+                <span>Tailwind CSS</span>
+                <span>JavaScript</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://suremsg.in" target="_blank" rel="noopener noreferrer" class="btn project-btn">
+                Visit Website <i class="uil uil-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------- CONTACT BOX ---------------- -->
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Get in touch</h1>
+          <span>Have an opportunity or project in mind? Let's connect!</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Aditya Verma</h2>
+              <p class="contact-line"><i class="uil uil-map-marker"></i> <span>Borivali West, Mumbai, Maharashtra</span>
+              </p>
+              <p class="contact-line clickable"
+                onclick="copyToClipboard('adityaverma0244@gmail.com', 'Email copied to clipboard!')"
+                title="Click to copy email">
+                <i class="uil uil-envelope"></i> <span>adityaverma0244@gmail.com</span> <i
+                  class="uil uil-copy copy-icon"></i>
+              </p>
+              <p class="contact-line clickable" onclick="copyToClipboard('+919372024440', 'Phone number copied!')"
+                title="Click to copy phone">
+                <i class="uil uil-phone"></i> <span>+91-9372024440</span> <i class="uil uil-copy copy-icon"></i>
+              </p>
+
+              <div class="contact-socials">
+                <a href="https://www.linkedin.com/in/aditya-verma-86b726304" target="_blank" rel="noopener noreferrer"
+                  title="LinkedIn"><i class="uil uil-linkedin-alt"></i></a>
+                <a href="https://www.github.com/itsaditya0108" target="_blank" rel="noopener noreferrer"
+                  title="GitHub"><i class="uil uil-github-alt"></i></a>
+                <a href="mailto:adityaverma0244@gmail.com" title="Send Email"><i class="uil uil-envelope"></i></a>
+                <a href="tel:+919372024440" title="Direct Call"><i class="uil uil-phone"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <form class="form-control" id="contactForm" method="post" action="submit_form.php">
+              <div class="form-inputs">
+                <input type="text" id="nameInput" name="name" class="input-field" placeholder="Your Name" required>
+                <input type="email" id="emailInput" name="email" class="input-field" placeholder="Your Email" required>
+              </div>
+              <div class="text-area">
+                <textarea id="messageInput" name="message" placeholder="Your Message" required></textarea>
+              </div>
+              <div class="form-button">
+                <button type="submit" class="btn blue-btn">Send Message <i class="uil uil-message"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
     </main>
 
-
     <!-- --------------- FOOTER --------------- -->
     <footer>
-        <div class="top-footer">
-            <p>Aditya Verma .</p>
-        </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-social-icons">
-            <div class="icon"><a href="https://www.instagram.com/aditya.verma.0fficial"><i class="uil uil-instagram"></i></a></div>
-            <div class="icon"><a href="https://www.linkedin.com/in/aditya-verma-86b726304"><i class="uil uil-linkedin-alt"></i></a></div>
-            <div class="icon"><a href="https://dribbble.com/itsaditya0108"><i class="uil uil-dribbble"></i></a></div>
-            <div class="icon"><a href="https://www.github.com/itsaditya0108"><i class="uil uil-github-alt"></i></a></div>
-        </div>
-        
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Aditya Verma</a> - All rights reserved</p>
-        </div>
+      <div class="top-footer">
+        <p>Aditya Verma .</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Home</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">About</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><a href="https://www.linkedin.com/in/aditya-verma-86b726304" target="_blank"
+            rel="noopener noreferrer" title="LinkedIn"><i class="uil uil-linkedin-alt"></i></a></div>
+        <div class="icon"><a href="https://www.github.com/itsaditya0108" target="_blank" rel="noopener noreferrer"
+            title="GitHub"><i class="uil uil-github-alt"></i></a></div>
+        <div class="icon" title="Copy Email"
+          onclick="copyToClipboard('adityaverma0244@gmail.com', 'Email copied to clipboard!')"><i
+            class="uil uil-envelope"></i></div>
+        <div class="icon"><a href="tel:+919372024440" title="Phone"><i class="uil uil-phone"></i></a></div>
+      </div>
+
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Aditya Verma</a> - All rights reserved</p>
+      </div>
     </footer>
 
-    </div>
+    <!-- ----- BACK TO TOP BUTTON ----- -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" title="Back to top">
+      <i class="uil uil-arrow-up"></i>
+    </button>
 
+    <!-- ----- TOAST NOTIFICATION ----- -->
+    <div class="toast-notification" id="toastNotification"></div>
 
+  </div>
 
+  <!-- ----- TYPING JS Link ----- -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- ----- SCROLL REVEAL JS Link----- -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- ----- MAIN JS ----- -->
-    <script src="scripts.js"></script>
+  <!-- ----- MAIN JS ----- -->
+  <script src="scripts.js"></script>
 </body>
+
 </html>
